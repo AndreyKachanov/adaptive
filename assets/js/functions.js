@@ -6,13 +6,40 @@ $(document).ready(function (){
 	initialize();
 });
 
-
------------------------//AJAX load links from the top nav
-
 function initialize() {
 	//Click on nav to load external content through AJAX
-	$('#topnav a').click(function(e){
+	$('#topnav a, #bottomnav a').not('#bottomnav #fbcallus a').click(function(e){
 		e.preventDefault();
-		$('#pages').load( e.target.href + ' #loadcontent'); //pages finished loading
+		$('<div></div>').attr('id', 'spinner').appendTo('#pages'); //spinner
+		$('#pages').load( e.target.href + ' #loadcontent', function() { //stop spinner
+			fadespinner();
+		}); //pages finished loading
 	}); //clicked on nav
+
+	foodclicks();
+
+}
+
+function foodclicks() {
+	//click on foodlist items to see them larger image onscreen
+	$('.foodlist li').click(function(e){
+
+		//Add the Overlay
+		$('<div></div>').attr('id', 'overlay').appendTo('body').hide().fadeIn("slow");
+
+		//Handle clicks on the overlay
+		$('#overlay').click(function(e){
+			$('#overlay').fadeOut('slow', function() {
+				$(this).remove();
+			}); //fadeout
+		}); //overlayclick
+
+	}); //foodlist click
+}
+
+
+function fadespinner() {
+	$('#spinner').fadeOut('slow', function() { //stop spinner
+		$(this).remove();
+	}); //remove spinner
 }
