@@ -176,19 +176,19 @@ footer nav li a:hover {
 }
 
 #appetizers,#sides {
-	-webkit-transform:rotate(-2deg);   
+/*	-webkit-transform:rotate(-2deg);   
 	-moz-transform:rotate(-2deg);  
 	-ms-transform:rotate(-2deg);  
 	-o-transform:rotate(-2deg);
-	transform:rotate(-2deg);
+	transform:rotate(-2deg);*/
 }
 
 #entrees {
-	-webkit-transform:rotate(2deg);   
+/*	-webkit-transform:rotate(2deg);   
 	-moz-transform:rotate(2deg);  
 	-ms-transform:rotate(2deg);  
 	-o-transform:rotate(2deg);
-	transform:rotate(2deg);
+	transform:rotate(2deg);*/
 }
 
 #aboutus img {
@@ -196,11 +196,11 @@ footer nav li a:hover {
 	display: block;
 	float: left;
 	border: 10px solid #FFF;
-	-webkit-transform:rotate(-2deg);   
+/*	-webkit-transform:rotate(-2deg);   
 	-moz-transform:rotate(-2deg);  
 	-ms-transform:rotate(-2deg);  
 	-o-transform:rotate(-2deg);
-	transform:rotate(-2deg);
+	transform:rotate(-2deg);*/
     -webkit-box-shadow:0 5px 10px #000;
     -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7);
     box-shadow:0 5px 10px rgba(0, 0, 0, 0.7);
