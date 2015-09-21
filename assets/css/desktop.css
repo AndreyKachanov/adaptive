@@ -140,7 +140,8 @@ footer nav li a:hover {
 }
 
 .foodlist li:hover img {
-	padding-left: 10px;
+	display: block;
+	padding-left: 1px;
 }
 
 .foodlist .info {
